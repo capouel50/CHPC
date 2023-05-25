@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
+
+      <style>
+        .dropdown-submenu{
+            position: relative;
+        }
+        .dropdown-submenu .dropdown-menu{
+            top: 0;
+            left: 100%;
+            margin-top: -1px;
+        }
+        .dropdown-submenu > a::after {
+            display: block;
+            content: "";
+            float: right;
+            width: 0;
+            height: 0;
+            border-top: 5px solid transparent;
+            border-bottom: 5px solid transparent;
+            border-left: 5px solid;
+            margin-top: 10px;
+            margin-right: -10px;
+        }
+      </style>
+
+    <title>PPH</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="home.html">
+        <img src="../img/logo.png" alt="Logo" height="30" class="d-inline-block align-text-top">PPH</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Fichier
+              </a>
+              <ul class="dropdown-menu multi" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">Mon compte</a>
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="#">Utilisateurs</a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-item">
+                            <a class="dropdown-item" href="#">Créer un utilisateur</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a class="dropdown-item" href="#">Modifier les droits d'un utilisateur</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="#">Unités de soin</a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-item">
+                            <a class="dropdown-item" href="#">Ajouter une unité</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a class="dropdown-item" href="#">Modifier/désactiver une unité</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="#">Paramètres</a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-item">
+                            <a class="dropdown-item" href="#">Matières premières</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a class="dropdown-item" href="#">Préparations</a>
+                        </li>
+                    </ul>
+                </li>
+                <a class="dropdown-item" href="#">Se déconnecter</a>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Matières premières
+              </a>
+              <ul class="dropdown-menu multi" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">Créer fiche matière première</a>
+                <a class="dropdown-item" href="#">Réception des matières premières</a>
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="#">Certificats d'analyse</a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-item">
+                            <a class="dropdown-item" href="#">Télécharger un certificat</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a class="dropdown-item" href="#">Rechercher un certificat</a>
+                        </li>
+                    </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Production
+              </a>
+              <ul class="dropdown-menu multi" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">Ajouter une Formule</a>
+                <a class="dropdown-item" href="#">Nouvelle fiche de fabrication</a>
+                <a class="dropdown-item" href="#">En attente de contrôle</a>
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="#">Plannification</a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-item">
+                            <a class="dropdown-item" href="#">Ajouter une demande</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a class="dropdown-item" href="#">Demande en attente</a>
+                        </li>
+                    </ul>
+                </li>
+                <a class="dropdown-item" href="#">Réattribution</a>
+                <a class="dropdown-item" href="#">Reconditionnement</a>
+              </ul
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Gestion
+              </a>
+             <ul class="dropdown-menu multi" aria-labelledby="navbarDropdownMenuLink">
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="#">Fournisseurs</a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-item">
+                            <a class="dropdown-item" href="#">Créer fiche fournisseur</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a class="dropdown-item" href="#">Modifier fiche fournisseur</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a class="dropdown-item" href="#">Télécharger catalogue fournisseur</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="#">Stock</a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-item">
+                            <a class="dropdown-item" href="#">Préparations</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a class="dropdown-item" href="#">Matières premières</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="#">Commandes</a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-item">
+                            <a class="dropdown-item" href="#">Produits en attente de commande</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a class="dropdown-item" href="#">Edition fiche de commande</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a class="dropdown-item" href="#">Produits en attente de livraison</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a class="dropdown-item" href="#">Historique des commandes</a>
+                        </li>
+                    </ul>
+                </li>
+                 <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="#">Statistiques</a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-item">
+                            <a class="dropdown-item" href="#">Bilans</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a class="dropdown-item" href="#">Requêtes</a>
+                        </li>
+                    </ul>
+                </li>
+                <a class="dropdown-item" href="#">Tarification</a>
+              </ul>
+            </li>
+              <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Traçabilité
+              </a>
+             <ul class="dropdown-menu multi" aria-labelledby="navbarDropdownMenuLink">
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="#">Ordonnancier</a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-item">
+                            <a class="dropdown-item" href="#">Consulter</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a class="dropdown-item" href="#">Imprimer</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="#">Historiques</a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-item">
+                            <a class="dropdown-item" href="#">Patients</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a class="dropdown-item" href="#">Préparations</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a class="dropdown-item" href="#">Matières premières</a>
+                        </li>
+                    </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+                    <a class="nav-link" href="#" id="nav-Link" role="button">
+                Aide
+                    </a>
+            </li>
+          </ul>
+        </div>
+
+        <form class="form-inline my-2 my-lg-0 ml-auto">
+            <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Quitter l'application</button>
+        </form>
+
+      </div>
+    </nav>
+
+    <!-- jQuery and Bootstrap bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+  <footer class="bg-light py-3 fixed-bottom">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 text-left">
+                <p>Conception Capelle Jérémy - 2023</p>
+            </div>
+            <div class="col-md-6 text-md-right text-center">
+                <ul class="list-inline">
+                    <li class="list-inline-item">
+                        <a href="#">Conditions d'utilisation</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+  </footer>
+    <script>
+        window.onload = () => {
+            let menus = document.querySelectorAll(".dropdown-submenu a.dropdown-toggle")
+            for(let menu of menus){
+                menu.addEventListener("click", function(e){
+                    e.stopPropagation()
+                    e.preventDefault()
+                    let sousmenus = document.querySelectorAll(".multi .dropdown-menu")
+                    for(let sousmenu of sousmenus){
+                        sousmenu.style.display = "none"
+                    }
+                    this.nextElementSibling.style.display = "Initial"
+                })
+            }
+        }
+    </script>
+  </body>
+</html>
